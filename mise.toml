@@ -1,0 +1,21 @@
+[env]
+
+
+[tools]
+# Runtimes
+node   = "20"      # Node.js 20 (>= 18), includes npm
+python = "3.12"    # Python 3.12 (>= 3.10)
+bun    = "latest"
+uv     = "latest"  # Astral UV
+
+# GitHub CLI via GitHub backend (installs `gh`)
+[tools."github:cli/cli"]
+version = "latest"
+
+# Vite via npm backend (global CLI)
+[tools."npm:vite"]
+version = "latest"
+
+# Pytest via pipx backend (standalone `pytest` command)
+[tools."pipx:pytest"]
+version = "latest"
